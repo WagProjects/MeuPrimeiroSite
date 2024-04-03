@@ -36,7 +36,8 @@
     transition: all 1s ease;
 }
 
-.poster__perfil:hover{
+.poster__perfil:hover,
+.poster__perfil:hover ul li a{
     text-shadow: var(--default-light);
     color: var(--color-star-light);
 }
@@ -55,7 +56,7 @@
 
 .poster__perfil h2{
     margin: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .poster__perfil ul{
@@ -63,22 +64,30 @@
 }
 
 .poster__perfil ul li{
+    text-align: left;
     margin: 8px;
+}
+
+.poster__perfil ul li a{
+    color: var(--color-font-menu);
+    text-decoration: none;
+    transition: all 1s ease;
 }
 
 .poster__perfil ul li img.icon__perfil{
     width: 20px;
+    height: 20px;
     vertical-align: middle;
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 
 .poster__perfil ul li img.icon__localiza{
     vertical-align: middle;
-    margin-right: 4px;
-    width: 15px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
 }
-
 
 .poster__buttons{
     display: flex;

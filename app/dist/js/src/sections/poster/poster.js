@@ -11,8 +11,9 @@ export function criarElementoPoster() {
                 <h2>Wagner Oliveira</h2>
                 <ul>
                     <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-cap.svg" alt="Icone de Cap de Formando" />Desenvolvedor Front-End</li>
+                    <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-whatsapp.svg" alt="Icone de Contato" /><a href="https://wa.me/5521992316655" target="_blank">+55 21 992316655</a></li>
+                    <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-email.svg" alt="Icone de Email" /><a href="mailto:contato-wagneros@outlook.com">contato-wagneros@outlook.com</a></li>
                     <li><img class="icon__localiza" src="./public/assets/images/icons/Icon-location-dot-solid.svg" alt="Icone de Localização" />Rio de Janeiro, RJ - Brasil</li>
-                    <li></li>
                 </ul>
             </div>
             <div class="poster__buttons">
