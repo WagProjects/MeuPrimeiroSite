@@ -10,8 +10,7 @@ export function criarElementoSobre() {
     cardSobre.innerHTML = `
             <div class="content">
                 <h1 align="center">Bem-vindo(a)</h1>
-                <p>Atuo como desenvolvedor front-end.</p>
-                <p>Este é meu portfólio de projetos pessoais!</p>
+                <p>Venho trabalhando em projetos em meu portfólio com o objetivo de agregar conhecimento e estar preparado para os desafios cotidianos de uma equipe de desenvolvimento.</p>
                 <p>Algumas tecnologias que tenho atuado em meus projetos:</p>
                 <ul class="content-tecnologias">
                     <li> <img src="./public/assets/images/icons/Icon-html5.svg" class="icon-tecnologias"/> HTML </li>

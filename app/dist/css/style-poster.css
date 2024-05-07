@@ -14,16 +14,17 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
     text-align: center;
+    gap: 100px;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 720px;
-    width: 1280px;
-    padding: 20px 0 30px 0;
+    height: 670px;
+    width: 1100px;
+    padding: 20px 30px 30px 30px;
     color: var(--color-star-light);
     background: radial-gradient(circle, rgba(14,14,14,1) 0%, rgba(7,7,7,1) 100%);
     box-shadow: var(--box-shadow-card);
@@ -31,7 +32,13 @@
     border-radius: 5px;
 }
 
+
 .poster__perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
     color: var(--color-font-menu);
     transition: all 1s ease;
 }
@@ -44,7 +51,7 @@
 
 #foto__perfil{
     margin: 20px;
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     border: 2px solid var(--color-font-menu);
     transition: all 1s ease;
@@ -87,6 +94,18 @@
     margin-right: 10px;
     width: 20px;
     height: 20px;
+}
+
+.poster__perfil-detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__buttons{
+    display: flex;
+    justify-content: center;
 }
 
 .poster__buttons{

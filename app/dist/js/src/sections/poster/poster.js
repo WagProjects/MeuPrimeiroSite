@@ -7,21 +7,29 @@ export function criarElementoPoster() {
         </video>
         <div class="card__poster">
             <div class="poster__perfil">
-                <img src="./public/assets/images/Ultima.jpg" alt="Perfil" id="foto__perfil" />
-                <h2>Wagner Oliveira</h2>
-                <ul>
-                    <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-cap.svg" alt="Icone de Cap de Formando" />Desenvolvedor Front-End</li>
-                    <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-whatsapp.svg" alt="Icone de Contato" /><a href="https://wa.me/5521992316655" target="_blank">+55 21 992316655</a></li>
-                    <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-email.svg" alt="Icone de Email" /><a href="mailto:contato-wagneros@outlook.com">contato-wagneros@outlook.com</a></li>
-                    <li><img class="icon__localiza" src="./public/assets/images/icons/Icon-location-dot-solid.svg" alt="Icone de Localização" />Rio de Janeiro, RJ - Brasil</li>
-                </ul>
-            </div>
-            <div class="poster__buttons">
-                <div class="rede__button git">
-                    <a><img class="icon__rede" alt="Icone do github" src="../public/assets/images/icons/Icon-square-github.svg"/>Github</a>
+                <div>
+                    <img src="./public/assets/images/Ultima.jpg" alt="Perfil" id="foto__perfil" />
                 </div>
-                <div class="rede__button linkedin">
-                    <a><img class="icon__rede" alt="Icone do linkedin" src="../public/assets/images/icons/Icon-linkedin.svg"/>Linkedin</a>
+                <div class="poster__perfil-detalhes">
+                    <h2>Wagner Oliveira</h2>
+                    <p>Atuo como desenvolvedor front-end.
+                    Este é meu portfólio de projetos pessoais!</p>
+                    <ul>
+                        <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-cap.svg" alt="Icone de Cap de Formando" />Desenvolvedor Front-End</li>
+                        <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-whatsapp.svg" alt="Icone de Contato" /><a href="https://wa.me/5521992316655" target="_blank">+55 21 992316655</a></li>
+                        <li><img class="icon__perfil" src="./public/assets/images/icons/Icon-email.svg" alt="Icone de Email" /><a href="mailto:contato-wagneros@outlook.com">contato-wagneros@outlook.com</a></li>
+                        <li><img class="icon__localiza" src="./public/assets/images/icons/Icon-location-dot-solid.svg" alt="Icone de Localização" />Rio de Janeiro, RJ - Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card__buttons">
+                <div class="poster__buttons">
+                    <div class="rede__button git">
+                        <a><img class="icon__rede" alt="Icone do github" src="../public/assets/images/icons/Icon-square-github.svg"/>Github</a>
+                    </div>
+                    <div class="rede__button linkedin">
+                        <a><img class="icon__rede" alt="Icone do linkedin" src="../public/assets/images/icons/Icon-linkedin.svg"/>Linkedin</a>
+                    </div>
                 </div>
             </div>
         </div>
