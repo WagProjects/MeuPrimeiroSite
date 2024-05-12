@@ -72,6 +72,11 @@
     opacity: 1;
 }
 
+.nome-logo{
+    color: #FFF;
+    font-family: var(--font-logo);
+}
+
 .menu ul{
     display: flex;
     list-style: none;

@@ -34,16 +34,16 @@
 }
 
 .titulo__secao::before {
-    background-image: url('../public/assets/images/flecha3.png');
+    background-image: url('../public/assets/images/flecha-secao.svg');
     top: 8px;
-    left: -405px;
+    left: -555px;
+    transform: scalex(-1);
 }
 
 .titulo__secao::after {
-    background-image: url('../public/assets/images/flecha3.png');
+    background-image: url('../public/assets/images/flecha-secao.svg');
     top: 8px;
-    right: -400px;
-    transform: scalex(-1);
+    right: -550px;
 }
 
 #imagem__sobre, #imagem__projetos{

@@ -7,6 +7,7 @@ export function criarElementoMenu(): HTMLElement{
                 <img class="menu-icon-music" src="../../../public/assets/images/icons/Icon-music-solid.svg" alt="Icone Musica" />
             </span>
             <span>
+                <p class="nome-logo">Wagner Oliveira</p>
                 <img class="menu-logo" src="../../../public/assets/images/Logo-01.png" alt="Logo" />
             </span>
         </div>
