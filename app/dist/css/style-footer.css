@@ -7,7 +7,7 @@
     height: 350px;
     box-sizing: border-box;
     color: var(--color-font-menu);
-    
+    font-size: 0.8em;
 }
 
 .card__footer{
@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .social__footer{
@@ -45,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .rodape .card__footer span img{

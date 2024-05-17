@@ -88,12 +88,8 @@ export function criarElementoRodaPe(){
             <img src="./public/assets/images/Logo-Footer.png" alt="Logo Footer"/>
         </span>
         <div>
-            <ul>
-                <li><a>Sobre mim</a></li>
-                <li><a>Contato</a></li>
-            </ul>
-            <p>Wagner Oliveira</p>
-            <p>2024 © Todos Direitos Reservados.</p>
+            <p>Agradeço sua atenção em meu portifólio, se tiver algo construtivo a me dizer, por favor, entre em contato!</p>
+            <p>2024 © Direitos Reservados.</p>
         </div>
     `
 
