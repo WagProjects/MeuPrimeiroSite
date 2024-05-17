@@ -111,3 +111,6 @@ Documentação Utilizada:
 - [Artigo TypeScript Alura](https://www.alura.com.br/artigos/typescript-javascript-vanilla?_gl=1*s0it44*_ga*NjE2NjAzNDM2LjE2ODAyODk1MzI.*_ga_1EPWSW3PCS*MTcwNjcxMDc0Ni4zMzQuMS4xNzA2NzEwNzYxLjAuMC4w*_fplc*alY1YXBpQ0NzY2slMkZMdTBGcXNJbHY2dHg3ODJtN2RoOXREY01helZKOTRxJTJCOGJnaHBqTk04eFElMkY5Z0VzT2pvRHl4Qk0lMkZZdGZKY3hJU1NRTXJlY0lGdlNwRGVMclFNZUNtbXgyQ1ZDOCUyRnpKSk1mU2NJR1klMkIzbWRrQ1JzcTN3JTNEJTNE)
 - [Lite Server](https://www.npmjs.com/package/lite-server)
 - [SwiperJS](https://swiperjs.com/)
+
+### 💞 Inspiração: 
+- [Genshin Impact](https://genshin.hoyoverse.com/pt/home)
