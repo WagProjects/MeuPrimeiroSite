@@ -1,6 +1,6 @@
 export function criarElementoContato() {
     const sectionContato = document.createElement('section');
-    sectionContato.classList.add('container__contato');
+    sectionContato.classList.add('container__contato', 'container');
     const cardContato = document.createElement('div');
     cardContato.classList.add('card__contato');
     sectionContato.innerHTML = `

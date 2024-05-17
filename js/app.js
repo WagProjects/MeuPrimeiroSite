@@ -1,4 +1,5 @@
 import { criarElementoMenu } from "./src/sections/menu/menu.js";
+import { criarElementoMenuLateral } from "./src/sections/menu/menuLateral.js";
 import { criarContainerGeral } from "./src/main/main.js";
 import { criarElementoPoster } from "./src/sections/poster/poster.js";
 import { criarElementoSobre } from "./src/sections/sobre/sobre.js";
@@ -15,6 +16,7 @@ function inserirElementoNoContainerGeral(elemento) {
     container.appendChild(elemento);
 }
 inserirElementoBody(criarElementoMenu());
+inserirElementoBody(criarElementoMenuLateral());
 inserirElementoBody(criarContainerGeral());
 inserirElementoNoContainerGeral(criarElementoPoster());
 inserirElementoNoContainerGeral(criarElementoSobre());

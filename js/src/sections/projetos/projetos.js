@@ -1,7 +1,7 @@
 export function criarElementoProjetos() {
     const sectionProjetos = document.createElement('section');
     const cardProjetos = document.createElement('div');
-    sectionProjetos.classList.add('container__projetos');
+    sectionProjetos.classList.add('container__projetos', 'container');
     sectionProjetos.id = 'section3';
     cardProjetos.classList.add('card__projetos');
     sectionProjetos.innerHTML = `

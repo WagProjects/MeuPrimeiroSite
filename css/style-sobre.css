@@ -14,8 +14,8 @@
 .titulo__secao{
     position: relative;
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 175px;
+    margin-bottom: 100px;
     font-size: 3em;
     letter-spacing: 5px;
     color: var(--color-star-light);
@@ -34,16 +34,16 @@
 }
 
 .titulo__secao::before {
-    background-image: url('../public/assets/images/flecha3.png');
+    background-image: url('../public/assets/images/flecha-secao.svg');
     top: 8px;
-    left: -405px;
+    left: -555px;
+    transform: scalex(-1);
 }
 
 .titulo__secao::after {
-    background-image: url('../public/assets/images/flecha3.png');
+    background-image: url('../public/assets/images/flecha-secao.svg');
     top: 8px;
-    right: -400px;
-    transform: scalex(-1);
+    right: -550px;
 }
 
 #imagem__sobre, #imagem__projetos{
@@ -53,14 +53,14 @@
 /* DEFINIÇAO CARD SOBRE*/
 .card__sobre{
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Duas colunas com tamanhos iguais */
+    grid-template-columns: 2fr 1fr; /* Duas colunas com tamanhos diferentes */
     align-items: center;
     gap: 20px; /* Espaço de 20 pixels entre as colunas */
     padding: 50px;
 
     max-width: 1080px;
     min-width: 700px;
-    
+
     background: linear-gradient(-30deg, rgba(24,20,50,0.2) 0%, rgba(0,0,0,0.6) 50%, rgba(74,75,139,0.1) 100%);
     border-radius: 20px;
     box-shadow: var(--box-shadow-card);
@@ -79,16 +79,11 @@
     color: var(--color-star-light);
 }
 
-.card__sobre:hover aside{
-    /* background: linear-gradient(171deg, rgba(24,20,50,0.3) 0%, rgba(0,0,0,0.5) 49%, rgba(74,75,139,0.3) 100%); */
-    background: linear-gradient(-15deg, rgba(176,196,222, 0.15) 0%, rgba(0,0,0,0.4) 50%, rgba(176,196,222, 0.15) 100%);
+/* .card__sobre:hover aside{
+    background: linear-gradient(171deg, rgba(24,20,50,0.3) 0%, rgba(0,0,0,0.5) 49%, rgba(74,75,139,0.3) 100%); 
+    background: linear-gradient(-15deg, rgba(176,196,222, 0.15) 0%, rgba(0,0,0,0.4) 50%, rgba(176,196,222, 0.15) 100%); 
     box-shadow: var(--box-shadow-card);
-}
-
-.card__sobre:hover aside #foto__perfil{
-    box-shadow: 0px -1px 10px rgba(224,255,255, 1);
-}
-
+} */
 /* FIM DEFINIÇÃO CARD SOBRE*/
 
 /* DEFINIÇÃO ASIDE */
@@ -96,55 +91,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+    gap: 50px;
     margin: 5px;
     min-width: 280px;
     height: 550px;
-    padding: 10px;
+    padding: 80px 10px 10px 10px;
     border-radius: 15px;
     box-sizing: border-box;
     transition: box-shadow 1s ease-in-out, background-color 1s ease-in-out;
 }
 
-.card__sobre aside ul{
-    list-style: none;
+.card__sobre aside img{
+    width: 350px;
 }
 
-.card__sobre aside ul li{
-    text-align: left;
-    margin: 20px 0;
+.card__sobre aside a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 40px;
+    border: 2px solid var(--color-font-menu);
+    border-radius: 25px;
 }
-
-.card__sobre aside ul li:hover,
-.card__sobre aside ul li:hover a{
+.card__sobre aside a:hover{
+    background: var(--background-color-card);
     text-shadow: var(--default-light);
     color: var(--color-star-light);
 }
 
-.card__sobre aside li.meu__nome{
-    text-align: center;
-    font-size: 2em;
-}
-
-.card__sobre aside li a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.card__sobre aside li img{
-    width: 20px;
-    vertical-align: middle;
-    margin-right: 4px;
-}
-
-.card__sobre aside li img#icon__localiza{
-    width: 16px;
-}
-
-#foto__perfil{
-    margin: 20px;
-    width: 80%;
-    border-radius: 50%;
-    border: 2px solid var(--color-font-menu);
+.card__sobre aside .icon-curriculo{
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: sub;
 }
 
 /* FIM DEFINIÇÃO ASIDE */
@@ -160,6 +140,7 @@
     margin: 5px;
     padding: 30px;
     border-radius: 15px;
+    text-align: center;
 
     font-size: 1.4em;
 
@@ -207,7 +188,7 @@
     color: var(--color-star-light);
 }
 
-.card__sobre .icon-tecnoligias{
+.card__sobre .icon-tecnologias{
     width: 25px;
     height: 25px;
     margin-right: 5px;

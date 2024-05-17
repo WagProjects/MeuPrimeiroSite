@@ -52,7 +52,6 @@ form{
     justify-content: right;
     padding-right: 20px;
     color: var(--color-star-light);
-    text-shadow: var(--default-light);
 }
 
 .form-group div{
@@ -320,8 +319,8 @@ textarea:focus-visible{
 
 .section__contato div aside{
     padding: 30px;
-    border: 1px solid var(--color-star-light);
-    border-radius: 50%;
+    border: 2px solid var(--color-star-light);
+    border-radius: 15%;
     margin-right: 100px;
 }
 
