@@ -1,0 +1,226 @@
+.container__poster{
+    position: relative;
+}
+
+.video__intro{
+    width: 99.2vw;
+    height: 100vh;
+    object-fit: cover; 
+    box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.9);
+    opacity: 1;
+}
+
+.card__poster{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 670px;
+    width: 1100px;
+    padding: 20px 30px 30px 30px;
+    color: var(--color-star-light);
+    background: radial-gradient(circle, rgba(14,14,14,1) 0%, rgba(7,7,7,1) 100%);
+    box-shadow: var(--box-shadow-card);
+    border: 1px solid rgb(22,22,22);
+    border-radius: 5px;
+}
+
+
+.poster__perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    color: var(--color-font-menu);
+    transition: all 1s ease;
+}
+
+.poster__perfil:hover,
+.poster__perfil:hover ul li a{
+    text-shadow: var(--default-light);
+    color: var(--color-star-light);
+}
+
+#foto__perfil{
+    margin: 20px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--color-font-menu);
+    transition: all 1s ease;
+}
+
+#foto__perfil:hover{
+    box-shadow: var(--default-light);
+}
+
+.poster__perfil h2{
+    margin: 20px;
+    font-size: 2.5em;
+}
+
+.poster__perfil ul{
+    list-style: none;
+}
+
+.poster__perfil ul li{
+    text-align: left;
+    margin: 8px;
+}
+
+.poster__perfil ul li a{
+    color: var(--color-font-menu);
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.poster__perfil ul li img.icon__perfil{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.poster__perfil ul li img.icon__localiza{
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.poster__perfil-detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card__buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.poster__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+}
+
+.rede__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 75px;
+    
+    background: linear-gradient(180deg, rgba(14, 14, 14, 1) 0%,rgba(7,7,7,1) 100%);
+    box-shadow: 0px 4px 8px rgba(7, 7, 7, 1); 
+
+    border-left: 2px solid rgba(56, 56, 56, 0.5); 
+    border-top: 2px solid rgba(56, 56, 56, 0.5); 
+    border-radius: 7px;
+    transition: all 0.1s ease;
+}
+
+.rede__button a{
+    font-family: var(--font-secundaria);
+    text-decoration: none;
+    color: var(--color-star-light);
+    font-size: 1.25em;
+}
+
+.rede__button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 4px 8px rgba(14, 14, 14, 1); 
+}
+
+.rede__button:active{
+    background: linear-gradient(0deg, rgba(28, 28, 28, 1) 0%,rgba(7,7,7,1) 100%);
+    transform: translateY(0px);
+}
+
+.icon__rede{
+    width: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*Efeito desvanescer debaixo do video*/
+.container__poster::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+/*ESTILO DAS SETAS DE AVANÇO NO BOTTOM DO VIDEO*/
+.poster__setas{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30px;
+    height: 45px;
+}
+
+.seta__avancar1{
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('../public/assets/images/seta-avancar.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    animation: pisca 1.5s infinite;
+}
+
+.seta__avancar2{
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('../public/assets/images/seta-avancar.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    animation: pisca 1.5s infinite 0.1s;
+}
+
+.seta__avancar3{
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url('../public/assets/images/seta-avancar.svg');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    animation: pisca 1.5s infinite 0.2s;
+}
+
+@keyframes pisca {
+    0%, 100%{
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,150 @@
+/* DEFINIÇÃO CONTAINER PROJETOS */
+
+.container__projetos{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 100px;
+    opacity: 1;
+}
+
+.card__projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    height: 650px;
+    width: 100%;
+}
+
+.card__projetos h1{
+    margin: 30px;
+}
+
+/*DEFINIÇÃO DO CARROUSEL*/
+.swiper1 {
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(224,255,255,0.25) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: var(--box-shadow-card);
+    border-radius: 20px;
+}
+
+div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal > span{
+    background-color: rgb(100, 255, 255);
+}
+
+.swiper-wrapper-projetos{
+}
+
+
+.swiper-wrapper-projetos .swiper-slide-projetos{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos .swiper-player {
+    width: 70%;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: var(--background-color-card);
+    box-shadow: var(--box-shadow-card);
+}
+
+.swiper-wrapper-projetos .swiper-player img,
+.swiper-wrapper-projetos .swiper-player .projeto__video{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+} 
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    width: 440px;
+    min-width: 350px;
+    min-height: 344px;
+    text-align: justify;
+    margin: 20px;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(0,0,0,0.1) 68%, rgba(255,255,255, 0) 100%);
+    border-radius: 10px;
+    box-shadow: var(--default-light);
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-content h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-content p{
+    margin: 2px;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-link div{
+    padding: 0;
+    margin: 10px;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside .aside-link span{
+    vertical-align: middle;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos aside span a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.swiper-wrapper-projetos .swiper-slide-projetos .icon-github{
+    width: 25px;
+    height: 25px;
+}
+
+.swiper-wrapper-projetos div aside span:hover,
+.swiper-wrapper-projetos div aside span a:hover{
+    background: var(--background-color-card);
+    color: #fff;
+    text-shadow: var(--default-light);
+}
+
+.swiper-wrapper-projetos div aside span img{
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+.swiper-scrollbar-projetos {
+    display: none;
+}
+/*FIM DEFINIÇÃO DO CARROUSEL*/
