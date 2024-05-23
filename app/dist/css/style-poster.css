@@ -226,11 +226,11 @@
 
 /* INICIO RESPONSIVIDADE */
 
-@media screen and (max-width: 1728px) and (min-height: 1920px){
+@media screen and (max-width: 1024px){
     .card__poster{
         height: 75%;
         width: 80%;
-        border-radius: 60px;
+        border-radius: 30px;
     }
 
     .poster__perfil{
@@ -241,7 +241,7 @@
     }
 
     #foto__perfil{
-        width: 500px;
+        width: 350px;
     }
 
     .poster__buttons{
@@ -251,22 +251,24 @@
     .rede__button{
         width: 100%;
         height: 125px;
-    }
-
-    .poster__perfil h2{
-        font-size: 5em;
-    }
-
-    .poster__perfil ul{
-        font-size: 1.75em;
-    }
-
-    .rede__button{
-        box-shadow: 0px 4px 8px rgba(14, 14, 14, 1); 
+        box-shadow: 0px 4px 8px rgba(14, 14, 14, 1);
+        border-radius: 14px;
     }
 
     .rede__button a{
-        font-size: 2.75em;
+        font-size: 2em;
+    }
+
+    .icon__rede{
+        width: 40px;
+    }
+
+    .poster__perfil h2{
+        font-size: 3.5em;
+    }
+
+    .poster__perfil ul{
+        font-size: 1.25em;
     }
 
     .poster__perfil-detalhes{
@@ -274,17 +276,13 @@
     }
 
     .poster__perfil-detalhes p{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     .poster__perfil ul li img.icon__perfil,
     .poster__perfil ul li img.icon__localiza{
-        width: 40px;
-        height: 40px;
-    }
-
-    .icon__rede{
-        width: 55px;
+        width: 30px;
+        height: 30px;
     }
 
     .seta__avancar1,

@@ -5,7 +5,6 @@
     font-size: var(--tamanho-font-menu);
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    min-width: 950px;
 
     position: fixed;
     top: 0;
@@ -22,9 +21,9 @@
 .container-icon-music{
     width: 20px;
     height: 20px;
-    margin-right: 15px;
+    padding: 15px;
     transition: transform 0.15s ease;
-    transform-origin: 45% 46%; 
+    transform-origin: 48.8% 48.8%; 
 }
 
 .container-icon-music:hover{
@@ -39,7 +38,7 @@
     height: 35px;
     top: 50%;
     left: 0%; 
-    transform: translate(-26%, -52%); 
+    transform: translate(17%, -52%); 
     border: 1px solid var(--color-font-menu);
     border-radius: 50%;
 }
@@ -51,7 +50,7 @@
     height: 36px;
     top: 50%;
     left: 0%; 
-    transform: translate(-25.4%, -52.2%); 
+    transform: translate(17.5%, -52.5%); 
     background-color: var(--background-color-card);
     border-radius: 50%;
     background-image: url(../public/assets/images/icons/Icon-ban-solid.svg);
@@ -115,9 +114,16 @@
 
 /* INICIO RESPONSIVIDADE */
 
-@media screen and (max-width: 1728px) and (min-height: 1920px){
+@media screen and (max-width: 719px){
+    .menu-logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
     .menu{
-        font-size: 2em;
+        font-size: 1.3em;
+        justify-content: space-evenly;
         height: 150px;
     }
 
@@ -137,25 +143,37 @@
     }    
 
     .menu-logo{
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         opacity: 1;
     }
 
     .container-icon-music{
+        display: flex;
+        justify-content: center;
         width: 40px;
         height: 40px;
+        padding: 30px;
+        transition: transform 0.15s ease;
+        transform-origin: 51.1% 51.1%; 
+        align-items: center;
     }
 
     .container-icon-music::before{
         width: 50px;
         height: 50px;
+        transform: translate(45%, -49%);
         border: 2px solid var(--color-font-menu);
-        transform: translate(-25%, -53%);
     }
 
     .container-icon-music.muted::after{
         width: 54px;
         height: 54px;
+        transform: translate(44.5%, -49.5%); 
+    }
+
+    .container-logo{
+        display: flex;
+        align-items: center;
     }
 }
