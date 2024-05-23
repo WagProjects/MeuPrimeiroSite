@@ -27,16 +27,6 @@ body{
     src: url('../public/assets/fonts/Roboto-thin.ttf') format('truetype');
 }
 
-@font-face{
-    font-family: 'Cormorant Garamond';
-    src: url('../public/assets/fonts/CormorantGaramond-Light.ttf') format('truetype');
-}
-
-@font-face{
-    font-family: 'Logo Font' ;
-    src: url('../public/assets/fonts/zh-cn.ttf') format('truetype');
-}
-
 :root {
     --font-primaria: 'Varela Round';
     --font-secundaria: 'Roboto-thin';
