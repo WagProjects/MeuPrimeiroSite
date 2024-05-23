@@ -122,54 +122,39 @@
 
 @media screen and (max-width: 1024px){
     .menu{
-        font-size: 1.3em;
+        font-size: 1em;
         justify-content: space-evenly;
-        height: 150px;
     }
 
-    .menu ul li{
-        border-top: 10px solid rgb(224, 255, 255, 0);
-    }
-
-    .menu ul li:hover,
-    .menu ul li.active{
-        border-top: 10px solid var(--color-star-light);
+    .menu ul li a{
+        font-size: 0.7em;
     }
 
     .menu-icon-music{
-        width: 24px;
-        height: 24px;
-        opacity: 1;
-    }    
-
-    .menu-logo{
-        width: 90px;
-        height: 90px;
-        opacity: 1;
+        width: 12px;
+        height: 12px;
     }
 
     .container-icon-music{
         display: flex;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        padding: 30px;
+        padding: 5px;
         transition: transform 0.15s ease;
         transform-origin: 51.1% 51.1%; 
         align-items: center;
     }
 
     .container-icon-music::before{
-        width: 50px;
-        height: 50px;
-        transform: translate(45%, -49%);
+        width: 25px;
+        height: 25px;
+        transform: translate(4%, -49%);
         border: 2px solid var(--color-font-menu);
     }
 
     .container-icon-music.muted::after{
-        width: 54px;
-        height: 54px;
-        transform: translate(44.5%, -49.5%); 
+        width: 28px;
+        height: 28px;
+        transform: translate(5.5%, -48.5%); 
     }
 
     .container-logo{
