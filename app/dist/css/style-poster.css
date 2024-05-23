@@ -226,7 +226,7 @@
 
 /* INICIO RESPONSIVIDADE */
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px) and (min-height: 1920px){
     .card__poster{
         height: 75%;
         width: 80%;
