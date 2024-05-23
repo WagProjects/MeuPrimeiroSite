@@ -229,7 +229,8 @@
 @media screen and (max-width: 1024px){
     .card__poster{
         height: 75%;
-        width: 80%;
+        width: 75%;
+        gap: 30px;
         border-radius: 30px;
     }
 
@@ -238,68 +239,54 @@
         align-items: center;
         justify-content: flex-start;
         height: 75%;
+        gap: 5px;
     }
 
     #foto__perfil{
-        width: 350px;
+        width: 225px;
+        margin: 5px;
     }
 
     .poster__buttons{
         width: 100%;
+        gap: 25px;
     }
 
     .rede__button{
         width: 100%;
-        height: 125px;
+        height: 70px;
         box-shadow: 0px 4px 8px rgba(14, 14, 14, 1);
         border-radius: 14px;
     }
 
     .rede__button a{
-        font-size: 2em;
+        font-size: 1em;
     }
 
     .icon__rede{
-        width: 40px;
+        width: 25px;
     }
 
     .poster__perfil h2{
-        font-size: 3.5em;
-    }
-
-    .poster__perfil ul{
-        font-size: 1.25em;
-    }
-
-    .poster__perfil-detalhes{
-        gap: 50px;
+        margin: 5px;
+        font-size: 1.75em;
     }
 
     .poster__perfil-detalhes p{
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+
+    .poster__perfil ul{
+        font-size: 0.75em;
     }
     
     .poster__perfil ul li img.icon__perfil,
     .poster__perfil ul li img.icon__localiza{
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
 
-    .seta__avancar1,
-    .seta__avancar2,
-    .seta__avancar3{
-        width: 90px;
-        height: 90px;
-        background-size: 60px;
-    }
-
-    .seta__avancar1{
-        top: -50px;
-    }
-    .seta__avancar2{
-        top: -35px;
-    }
-    .seta__avancar3{
-        top: -20px;
+    .poster__setas{
+        bottom: 20px;
     }
 }
