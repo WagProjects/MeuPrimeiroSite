@@ -235,6 +235,8 @@
 
     .poster__perfil{
         flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         height: 75%;
     }
 
@@ -249,5 +251,53 @@
     .rede__button{
         width: 100%;
         height: 125px;
+    }
+
+    .poster__perfil h2{
+        font-size: 5em;
+    }
+
+    .poster__perfil ul{
+        font-size: 1.75em;
+    }
+
+    .rede__button a{
+        font-size: 2.75em;
+    }
+
+    .poster__perfil-detalhes{
+        gap: 50px;
+    }
+
+    .poster__perfil-detalhes p{
+        font-size: 2em;
+    }
+    
+    .poster__perfil ul li img.icon__perfil,
+    .poster__perfil ul li img.icon__localiza{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon__rede{
+        width: 55px;
+    }
+
+    .seta__avancar1,
+    .seta__avancar2,
+    .seta__avancar3{
+        width: 90px;
+        height: 90px;
+        background-size: 60px;
+    }
+
+    .seta__avancar1{
+        top: -50px;
+    }
+    .seta__avancar2{
+        top: -35px;
+    }
+    .seta__avancar3{
+        top: -20px;
     }
 }
