@@ -24,7 +24,7 @@ body{
 
 @font-face{
     font-family: 'Roboto-thin';
-    src: url('../public/assets/fonts/Roboto-thin.ttf') format('truetype');
+    src: url('../public/assets/fonts/Roboto-Thin.ttf') format('truetype');
 }
 
 :root {
