@@ -226,12 +226,19 @@
 
 /* INICIO RESPONSIVIDADE */
 
+@media screen and (max-height: 700px){
+    .poster__perfil ul{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px){
     .card__poster{
         height: 75%;
         width: 75%;
         gap: 30px;
         border-radius: 30px;
+        z-index: 1;
     }
 
     .poster__perfil{
@@ -290,3 +297,70 @@
         bottom: 20px;
     }
 }
+
+@media screen and (max-width: 414px){
+    .card__poster{
+        height: 75%;
+        width: 75%;
+        gap: 30px;
+        border-radius: 30px;
+        z-index: 1;
+    }
+
+    .poster__perfil{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 75%;
+        gap: 5px;
+    }
+
+    #foto__perfil{
+        width: 175px;
+        margin: 5px;
+    }
+
+    .poster__buttons{
+        width: 100%;
+        gap: 25px;
+    }
+
+    .rede__button{
+        width: 100%;
+        height: 70px;
+        box-shadow: 0px 4px 8px rgba(14, 14, 14, 1);
+        border-radius: 14px;
+    }
+
+    .rede__button a{
+        font-size: 1em;
+    }
+
+    .icon__rede{
+        width: 25px;
+    }
+
+    .poster__perfil h2{
+        margin: 5px;
+        font-size: 1.75em;
+    }
+
+    .poster__perfil-detalhes p{
+        font-size: 1em;
+    }
+
+    .poster__perfil ul{
+        font-size: 0.75em;
+    }
+    
+    .poster__perfil ul li img.icon__perfil,
+    .poster__perfil ul li img.icon__localiza{
+        width: 15px;
+        height: 15px;
+    }
+
+    .poster__setas{
+        bottom: 20px;
+    }
+}
+
