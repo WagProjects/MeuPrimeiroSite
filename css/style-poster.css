@@ -226,6 +226,12 @@
 
 /* INICIO RESPONSIVIDADE */
 
+@media screen and (max-height: 700px){
+    .poster__perfil ul{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px){
     .card__poster{
         height: 75%;
