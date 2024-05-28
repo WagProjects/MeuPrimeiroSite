@@ -37,7 +37,7 @@ export function criarElementoSobre(){
             </div>
             <aside>
                 <img src="./public/assets/images/thumb-sobre.png" alt="Thumb Sobre" />
-                <a href="https://drive.google.com/file/d/1nfvgbNfmWy-rRMUhmDvPcOqLslJ0GPqW/view?usp=drive_link" target="_blank"><img src="./public/assets/images/icons/Icon-curriculum.svg" class="icon-curriculo" /> Currículo</a>
+                <a href="https://drive.google.com/file/d/14ji4DakvNSDD-YhCTzR7wNHbSmvukSky/view" target="_blank"><img src="./public/assets/images/icons/Icon-curriculum.svg" class="icon-curriculo" /> Currículo</a>
             </aside>
         `
     sectionSobre.appendChild(cardSobre)

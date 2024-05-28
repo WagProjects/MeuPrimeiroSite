@@ -117,3 +117,12 @@
 .rotacionado{
     transform: rotate(90deg);
 }
+
+/* INICIO RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px){
+    .menu__lateral{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
