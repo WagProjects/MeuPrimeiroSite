@@ -202,3 +202,55 @@
 
 /* FIM DEFINIÇÃO CONTENT */
 /* FINAL DEFINIÇÃO CONTAINER SOBRE */
+
+/* INICIO RESPONSIVIDADE */
+@media screen and (max-width: 1024px){
+    .titulo__secao{
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .titulo__secao::before,
+    .titulo__secao::after{
+        display: none;
+    }
+
+    .card__sobre{
+        width: 95%;
+        min-width: auto;
+        height: 100%;
+        padding: 5px;
+        gap: 0px;
+
+        box-sizing: border-box;
+        font-size: 0.7em;
+
+        grid-auto-flow: column; /* Configura o fluxo automático */
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr auto;
+    }
+
+    .card__sobre div.content{
+        padding: 0;
+    }
+
+    .card__sobre .content .content-tecnologias {
+        justify-content: space-evenly;
+    }
+
+    .card__sobre div.content h1{
+        margin: 20px;
+        font-size: 1em;
+    }
+
+    .card__sobre aside{
+        min-width: auto;
+        height: auto;
+        gap: 10px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .card__sobre aside img{
+        width: 70%;
+    }
+}
