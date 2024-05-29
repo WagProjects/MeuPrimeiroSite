@@ -39,10 +39,6 @@ div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal
     background-color: rgb(100, 255, 255);
 }
 
-.swiper-wrapper-projetos{
-}
-
-
 .swiper-wrapper-projetos .swiper-slide-projetos{
     padding: 10px;
     display: flex;
@@ -51,7 +47,7 @@ div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal
     overflow: hidden;
 }
 
-.swiper-wrapper-projetos .swiper-slide-projetos .swiper-player {
+.swiper-wrapper-projetos .swiper-slide-projetos .swiper-player{
     width: 70%;
     overflow: hidden;
     padding: 10px;
@@ -73,7 +69,6 @@ div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
     width: 440px;
     min-width: 350px;
     min-height: 344px;
@@ -148,3 +143,48 @@ div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal
     display: none;
 }
 /*FIM DEFINIÇÃO DO CARROUSEL*/
+
+/* INICIO RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px){
+    .swiper1{
+        width: 100%;
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos .swiper-player{
+        width: 100%;
+    }
+
+    .swiper-wrapper-projetos .swiper-player img, .swiper-wrapper-projetos .swiper-player .projeto__video{
+
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos aside{
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        justify-content: flex-start;
+        gap: 20px;
+        box-shadow: none;
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos aside .aside-content h1{
+        font-size: 1em;
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos aside .aside-content p{
+        font-size: 0.75em;
+    }
+
+    .swiper-wrapper-projetos .swiper-slide-projetos aside .aside-link div {
+        display: flex;
+        margin: 0px;
+        padding: 0;
+    }
+}
