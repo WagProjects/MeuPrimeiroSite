@@ -60,8 +60,9 @@
 
 .educacao__content{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
     max-width: 750px;
     height: auto;
     box-sizing: border-box;
@@ -69,8 +70,6 @@
 
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-left: 20px;
     padding: 10px;
     border-radius: 5px;
     color: var(--color-font-menu);
@@ -89,6 +88,7 @@
 .educacao__content .educacao__instituicao a{
     text-decoration: none;
     color: var(--color-font-menu);
+    text-decoration: underline;
 }
 .educacao__content .educacao__instituicao a:hover{
     color: #fff;
@@ -102,7 +102,7 @@
 }
 
 .nav__educacao li:hover .educacao__content{
-    background-color: var(--background-color-card);
+    background-color: rgba(0, 0, 0, 0.7);
     box-shadow: var(--box-shadow-card);
 }
 
@@ -264,8 +264,8 @@
 }
 
 span.swiper-pagination-bullet {
-    width: 15px; /* Ajuste conforme necessário para o tamanho desejado */
-    height: 15px; /* Ajuste conforme necessário para o tamanho desejado */
+    width: 15px;
+    height: 15px; 
     background-color: #ffffff00; /* Cor de fundo da bullet */
     border: 1px solid #fff;
 }
@@ -319,17 +319,17 @@ span.swiper-pagination-bullet-active {
     height: 100%;
 }
 
-.conteudo__extra-educacao-conteudo-outro span a{
+.conteudo__extra-educacao-conteudo-outro span{
     display: flex;
-    align-items: center;
-    position: absolute;
+    justify-content: end;
+}
+
+.conteudo__extra-educacao-conteudo-outro span a{
     text-decoration: none;
     border-radius: 2px;
     padding: 5px;
     color: var(--color-font-menu);
     font-size: 1.3em;
-    right: 20px;
-    bottom: 20px;
 }
 
 .conteudo__extra-educacao-conteudo-outro span img{
@@ -411,3 +411,56 @@ span.swiper-pagination-bullet-active {
 
 /*FIM CONTEUDO EXTRACURRICULAR LISTA*/
 /*FIM INICIO CONTEUDO EXTRACURRICULAR*/
+
+/* INICIO RESPONSIVIDADE */
+@media screen and (max-width: 1720px){
+    .nav__educacao .educacao__item-01:hover .educacao__background::before,
+    .nav__educacao .educacao__item-02:hover .educacao__background::before,
+    .nav__educacao .educacao__item-03:hover .educacao__background::before,
+    .nav__educacao .educacao__item-04:hover .educacao__background::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .educacao__content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 85%;
+        margin: 0;
+    }
+
+    .educacao__content h1{
+        font-size: 1em;
+    }
+
+    .educacao__background{
+        overflow: hidden;
+    }
+
+    .educacao__item-01 .educacao__background{
+        background-position: 65% 50%;
+    }
+
+    .titulo__extra-educacao {
+        font-size: 1.25em;
+    }
+
+    .card__extra-educacao {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .conteudo__extra-educacao{
+        max-width: none;
+        min-width: auto;
+        width: 100%;
+    }
+}
