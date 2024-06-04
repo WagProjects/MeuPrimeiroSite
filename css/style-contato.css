@@ -377,7 +377,7 @@ textarea:focus-visible{
 @media screen and (max-width: 1024px) {
     .card__contato{
         width: 100%;
-        height: 1700px
+        height: 1700px;
         background-color: unset;
         border-radius: 0;
         box-shadow: none;
