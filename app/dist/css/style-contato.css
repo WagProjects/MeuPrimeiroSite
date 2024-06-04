@@ -371,3 +371,123 @@ textarea:focus-visible{
     height: 25px;
     vertical-align: bottom;
 }
+
+/* INICIO DA RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    .card__contato{
+        width: 100%;
+        height: 1700px;
+        background-color: unset;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 5px;
+    }
+
+    .div__titulo-contato{
+        width: 100%;
+    }
+    
+    .titulo__contato{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .div__titulo-contato p{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .titulo__contato{
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    form{
+        width: 100%;
+        margin: 25px 0;
+        padding: 5px;
+    }
+
+    .form-group{
+        grid-template-columns: auto;
+    }
+
+    .form-group span{
+        justify-content: left;
+    }
+
+    .buttons-container{
+        margin-left: 0;
+        margin-top: 45px;
+    }
+
+    .buttons-container button{
+        font-size: 0.8em;
+    }
+
+    .buttons-container #limpar{
+        width: 35%;
+    }
+
+    .buttons-container #enviar{
+        width: 65%;
+    }
+
+    .buttons-container #enviar::before{
+        left: 30%;
+    }
+
+    .confirmacao{
+        margin-left: 0;
+    }
+
+    .confirmacao span{
+        font-size: 0.8em;
+    }
+
+    .confirmacao #confirmar::before{
+        left: 15%;
+    }
+
+    .confirmacao #revisar::before{
+        left: 27%;
+    }
+
+    .section__contato{
+        width: 100%;
+    }
+
+    .section__contato div{
+        justify-content: start;
+        gap: 20px;
+        box-sizing: unset;
+        padding: 10px;
+    }
+
+    .section__contato div aside{
+        padding: 20px;
+        margin-right: 0;
+    }
+
+    .section__contato div span{
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        box-sizing: unset;
+        text-align: center;
+    }
+
+    .section__contato div span h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .section__contato div span a{
+        font-size: 0.9em;
+    }
+
+    .section__contato div span ul{
+        display: none;
+    }
+}
