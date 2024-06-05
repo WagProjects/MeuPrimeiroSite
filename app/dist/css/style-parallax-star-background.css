@@ -115,3 +115,11 @@
     transform: translate(0px, -1000px);
   }
 }
+
+/* INICIO DA RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px){
+  .stars4{
+      top: 6000px;
+  }
+}

@@ -60,6 +60,11 @@
     align-items: center;
 }
 
+.rodape .social__footer ul li div a span,
+.rodape .social__footer ul li div span{
+    display: none;
+}
+
 .rodape .card__footer ul{
     display: flex;
     list-style: none;
@@ -68,5 +73,54 @@
 
 .rodape .card__footer ul li{
     padding: 10px;
+}
+
+/* INICIO RESPONSIVIDADE */
+@media screen and (max-width: 1024px){
+    .rodape{
+        height: auto;
+    }
+
+    .rodape .card__footer .social__footer{
+        margin-bottom: 20px;
+    }
+
+    .rodape .card__footer div{
+        text-align: center;
+    }
+
+    .rodape .card__footer .social__footer ul li{
+        width: auto;
+    }
+
+    .rodape .card__footer .social__footer ul li div{
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .rodape .social__footer ul li div a{
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .rodape .social__footer ul li div a span,
+    .rodape .social__footer ul li div span{
+        display: none;
+        color: var(--color-font-menu);
+    }
+
+    .rodape .card__footer ul{
+        display: flex;
+    }
+
+    .social__footer ul li svg,
+    .social__footer ul li a{
+        width: 16px; 
+        max-height: 16px;
+    }
+
+    .rodape .card__footer span{
+        margin-top: 0px;
+    }
 }
 
