@@ -8,6 +8,8 @@
     object-fit: cover; 
     box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.9);
     opacity: 1;
+    pointer-events: none; /* Desabilita a interação do usuário */
+    user-select: none;    /* Evita a seleção do vídeo */
 }
 
 .card__poster{

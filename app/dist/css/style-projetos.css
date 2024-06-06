@@ -162,7 +162,8 @@ div.swiper-pagination.swiper-pagination-progressbar.swiper-pagination-horizontal
     }
 
     .swiper-wrapper-projetos .swiper-player img, .swiper-wrapper-projetos .swiper-player .projeto__video{
-
+        pointer-events: none; /* Desabilita a interação do usuário */
+        user-select: none;    /* Evita a seleção do vídeo */
     }
 
     .swiper-wrapper-projetos .swiper-slide-projetos aside{

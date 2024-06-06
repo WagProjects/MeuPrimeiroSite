@@ -33,18 +33,18 @@
                 const swiper = new Swiper('.swiper1', {
                     // Optional parameters
                     direction: 'horizontal',
+                    mousewheel:{
+                        enabled: false,
+                    },
                     loop: true,
                     speed: 400,
                     slidesPerView: 1,
                     autoplay:{
                         delay: 6000,
-                        pauseOnMouseEnter: true,
+                        pauseOnMouseEnter: false,
                     },
                     effect: 'slide',
                     //grabCursor: true,
-                    mousewheel: {
-                        invert: true,
-                    },
                     // If we need pagination
                     pagination: {
                         el: '.swiper-pagination',
