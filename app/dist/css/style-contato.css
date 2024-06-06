@@ -337,7 +337,7 @@ textarea:focus-visible{
 }
 
 .section__contato div span ul{
-    display: flex;
+    display: none;
     list-style: none;
 }
 
